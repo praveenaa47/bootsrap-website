@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lapstore</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,11 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
-<style>
-    *{
-        font-family: "Baskervville SC", serif;
-    }
-</style>
+
 
 
     <!-- bootstrap -->
@@ -43,13 +43,13 @@
 
     <ul class="nav justify-content-end">
       <li class="nav-item">
-        <a class="nav-link active  bg-dark" aria-current="page" href="#">Home</a>
+        <a class="nav-link active  bg-dark" aria-current="page" href="#home">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link  bg-dark" href="#">Arrivals</a>
+        <a class="nav-link  bg-dark" href="#arrivals">Arrivals</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link  bg-dark" href="#">Services & About</a>
+        <a class="nav-link  bg-dark" href="#services">Services & About</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled text-primary bg-dark" aria-disabled="true">Help</a>
@@ -60,6 +60,7 @@
 
 
     <!-- banner -->
+     <section id="home">
     <div id="carouselExampleDark" class="carousel carousel-dark slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -98,12 +99,13 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-     
+  </section>
 
 
 
 
     <!-- collections -->
+     <section id="arrivals">
      <h3 class="text-center bg-warning m-2">COLLECTIONS</h3>
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
       <div class="col">
@@ -144,19 +146,33 @@
               Stream, listen, browse and do all the things. More modern, more premium design elements on mainstream devices for a great price
               13th Generation Intel® Core™ i7 processor Windows 11 Home 39.6 cm (15.6) diagonal FHD IPS display with Intel® Iris® Xᵉ Graphics 16 GB DDR4 RAM 1 TB SSD Solid State Drive Backlit keyboard with numeric keypad, Fingerprint reader, Wide Vision 720p HD camera, B&O Speakers</p>
           </div>
-          <div class="card-footer bg-info">
+            <div class="card-footer bg-info">
             <small class="text-dark body-secondary ">View Details ></small>
             <button class="btn btn-success">Check Out</button>
           </div>
         </div>
       </div>
     </div>
+  </section>
 
 
+          <!-- banner again -->
+          <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active mt-3 mb-3">
+                <img  width="100%" height="500px" src="https://i.pinimg.com/originals/a7/ae/8e/a7ae8e618fd2bcf0ab3d29c3a87c8616.jpg" class="d-block w-100" alt="...">
+              </div>
+             
+            </div>
+          </div>
+
+         
+      
 
 
 
     <!-- footer -->
+     <section id="services">
      <hr>
      <hr>
      <h5 class="text-dark text-center bg-secondary">SERVICES</h5>
@@ -274,6 +290,7 @@
       </div>
       <!-- Copyright -->
     </footer>
+  </section>
 
     
 </body>
